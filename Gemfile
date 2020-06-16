@@ -45,6 +45,10 @@ group :development, :test do
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'pry-doc'
+  gem 'capistrano'
+  gem 'capistrano-rails'
+  gem 'capistrano3-puma'
+  gem 'capistrano-rbenv'
 end
 
 group :development do
@@ -83,6 +87,8 @@ gem "refile-mini_magick"
 gem "bootstrap-sass", ">= 3.4.1"
 
 gem 'jquery-rails'
+gem 'dotenv-rails'
+
 
 
 
