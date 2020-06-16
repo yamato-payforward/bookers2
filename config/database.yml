@@ -50,17 +50,17 @@ test:
 
 production:
   <<: *default
-  #database: <%= ENV['DB_DATABASE'] %>
-  database: bookers_production
+  database: <%= ENV['DB_DATABASE'] %>
+  #database: bookers_production
   adapter: mysql2
   encoding: utf8mb4
   charset: utf8mb4
   collation: utf8mb4_general_ci
-  #host: <%= ENV['DB_HOST'] %>
-  host: database-1.chesglodydyd.ap-northeast-1.rds.amazonaws.com
-  #username: <%= ENV['DB_USERNAME'] %>
-  username: root
-  #password: <%= ENV['DB_PASSWORD'] %>
-  password: hogehoge
+  host: <%= ENV['DB_HOST'] %>
+  #host: database-1.chesglodydyd.ap-northeast-1.rds.amazonaws.com
+  username: <%= ENV['DB_USERNAME'] %>
+  #username: root
+  password: <%= ENV['DB_PASSWORD'] %>
+  #password: hogehoge
   socket: /var/lib/mysql/mysql.sock
 
